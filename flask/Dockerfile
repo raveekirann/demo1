@@ -4,7 +4,7 @@ RUN pip install Flask requests
 RUN mkdir /app
 RUN chown 1001 /app
 USER 1001
-RUN cd /app; git clone https://github.optum.com/jbobba10/flask.git
+RUN cd /app; git clone https://github.com/kisshore/kube.git
 WORKDIR /app/flask
 ENV FLASK_APP=app.py
 ENV FLASK_ENV=development
